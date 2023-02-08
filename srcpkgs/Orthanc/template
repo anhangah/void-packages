@@ -1,6 +1,6 @@
 # Template file for 'Orthanc'
 pkgname=Orthanc
-version=1.11.2
+version=1.11.3
 revision=1
 build_wrksrc="OrthancServer"
 build_style=cmake
@@ -17,7 +17,7 @@ maintainer="Carlos E. Gallo F. <gcarlos@disroot.org>"
 license="GPL-3.0-or-later"
 homepage="https://www.orthanc-server.com/index.php"
 distfiles="https://www.orthanc-server.com/downloads/get.php?path=/orthanc/Orthanc-${version}.tar.gz"
-checksum=fd3a855f181db25db1baa9f94b2841b611dc623fb01c559f55be88502c6784a7
+checksum=103ef5d57f8e8ae2db35e74503172d42c6e1f4e528512c555118efe14ebc077b
 python_version=3
 nocross="A package on makedepends (dcmtk) is marked as nocross"
 
