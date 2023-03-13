@@ -14,9 +14,9 @@ configure_args="--with-php-config=php-config
  --enable-memcached-protocol=no
  --enable-memcached-sasl=yes
  --enable-memcached-session=yes"
-hostmakedepends="autoconf php-devel pkg-config"
-makedepends="libmemcached-devel php-devel zlib-devel"
-depends="php>=7.0.0"
+hostmakedepends="autoconf php7.4-devel pkg-config"
+makedepends="libmemcached-devel php7.4-devel zlib-devel"
+depends="php7.4"
 short_desc="PHP extension for interfacing with memcached via libmemcached library"
 maintainer="Carlos E. Gallo F. <gcarlos@disroot.org>"
 license="PHP-3.01"

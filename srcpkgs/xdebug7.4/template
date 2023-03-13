@@ -1,0 +1,24 @@
+# Template file for 'xdebug7.4'
+pkgname=xdebug7.4
+version=3.1.6
+revision=1
+build_style=gnu-configure
+configure_args="--with-php-config=/usr/bin/php-config"
+hostmakedepends="autoconf php7.4-devel"
+makedepends="php7.4-devel"
+short_desc="PHP debugging extension"
+maintainer="Joel Beckmeyer <joel@beckmeyer.us>"
+license="PHP-3.0"
+homepage="http://xdebug.org"
+changelog="https://xdebug.org/updates"
+distfiles="http://xdebug.org/files/xdebug-${version}.tgz"
+checksum=554eca0b4d5b7b93cb2258fab0b0bd84cc8721e74322a2255c14e137cbcad5d2
+
+pre_configure() {
+	phpize
+}
+
+do_install() {
+	make INSTALL_ROOT=${DESTDIR} install
+	vlicense LICENSE
+}
